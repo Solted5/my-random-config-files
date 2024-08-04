@@ -75,8 +75,13 @@
     #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  # Make Davinci Resolve work
+   hardware.opengl = {
+   enable = true;
+   extraPackages = with pkgs; [
+     rocmPackages.clr.icd
+   ];
+ };
 
   # Use fish as default shell
   programs.fish.enable = true;
@@ -98,6 +103,7 @@ xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     packages = with pkgs; [
 kdePackages.kate
 tor
+davinci-resolve
 flameshot
 tor-browser-bundle-bin
 mullvad-vpn
