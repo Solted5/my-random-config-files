@@ -1,0 +1,1 @@
+flatpak install  com.github.tchx84.Flatseal com.usebottles.bottles io.github.lime3ds.Lime3DS net.davidotek.pupgui2 org.DolphinEmu.dolphin-emu org.filezillaproject.Filezilla org.kde.isoimagewriter org.libreoffice.LibreOffice org.ppsspp.PPSSPP && flatpak install dev.vencord.Vencord
